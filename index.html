@@ -20,7 +20,8 @@
     }
     .message {
       margin-top: 20px;
-      font-size: 20px;
+      font-size: 18px;
+      color: red;
     }
   </style>
 </head>
@@ -41,11 +42,10 @@
       const message = document.getElementById("message");
 
       if (userPassword === correctPassword) {
-        message.innerHTML = "🎉 Congrats!";
-        message.style.color = "green";
+        // go to next page
+        window.location.href = "success.html";
       } else {
         message.innerHTML = "❌ Wrong password. Try again.";
-        message.style.color = "red";
       }
     }
   </script>
